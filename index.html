@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+<link rel="stylesheet" href="style.css">
+<TITLE>２進数・１０進数・８進数・１６進数</TITLE>
+</HEAD>
+<BODY>
+<h1>【　２進数・１０進数・８進数・１６進数　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+コンピュータが扱う情報は、デジタル量などを扱う<p class="di"><strong>｢離散数学｣</strong></p>と密接な関係にあります。離散数学は、コンピュータの論理回路やデータ構造、言語倫理などの幅広い分野の基礎となるものです。<br>
+コンピュータ内部では、電流の有無や電圧の高低などによってデータを識別して処理されています。識別されたデータは<p class="di"><strong>｢0｣</strong></p>と<p class="di"><strong>｢1｣</strong></p>で組みわわされた数値で表現され、この2種類の数字で情報を表す方法を<p class="di"><strong>｢2進数｣</strong></p>といいます。2進数は人間にとって判断しにくいという特徴があるため、通常使っている0~9の数字を使った<p class="di"><strong>｢10進数｣</strong></p>に置き換えて表現されます。0、1までは同等ですが、２進数での２以降の数値は桁が上がって表現されます。<br>
+また、コンピュータで扱う数値の表現方法には、0~7の数字を使った<p class="di"><strong>｢8進法｣</strong></p>や、0~9の数字とA～Fのアルファベットを使った<p class="di"><strong>｢16進数｣</strong></p>などがあります。<br>
+
+<script>
+    const buttom = document.getElementById('buttom');
+    const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+
+    // マウスホバー時
+    buttom.addEventListener('mouseover', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '1';
+        });
+    }, false);
+
+    // マウスが離れている時
+    buttom.addEventListener('mouseleave', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '0';
+        });
+    }, false);
+</script>
+
+<P><IMG src="1-1-1-1.jpg" width="300" border="0"></P>
+</BODY>
+</HTML>
